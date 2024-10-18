@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #main-image {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-container img {
+            width: 18%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            transition: border 0.3s;
+        }
+
+        .thumbnail-container img:hover {
+            border-color: #0044cc;
+        }
+
+        #description {
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hlavní záhlaví s odkazem -->
+    <header>
+        <a href="index.html">Mycat</a>
+    </header>
+
+    <!-- Kontejner pro hlavní obrázek a miniatury -->
+    <div class="container">
+        <!-- Hlavní obrázek -->
+        <img id="main-image" src="https://github.com/Luky1212/MYCAT-SHOP/blob/main/komp%201000%20predobok.jpg?raw=true" alt="Hlavní obrázek">
+
+        <!-- Miniatury obrázků -->
+        <div class="thumbnail-container">
+            <img src="https://github.com/Luky1212/MYCAT-SHOP/blob/main/komp%201000%20inside.jpg?raw=true" alt="PIC 1" onclick="changeImage(this)">
+            <img src="https://github.com/Luky1212/MYCAT-SHOP/blob/main/komp%201000%20predek.jpg?raw=true" alt="PIC 2" onclick="changeImage(this)">
+            <img src="https://github.com/Luky1212/MYCAT-SHOP/blob/main/komp%201000%20zadek%20.jpg?raw=true" alt="PIC 3" onclick="changeImage(this)">
+            <img src="https://github.com/Luky1212/MYCAT-SHOP/blob/main/komp%201000%20gpu.jpg?raw=true" alt="PIC 4" onclick="changeImage(this)">
+            <img src="https://github.com/Luky1212/MYCAT-SHOP/blob/main/komp%201000%20predobok.jpg?raw=true" alt="PIC 5" onclick="changeImage(this)">
+        </div>
+
+        <!-- Popis -->
+        <p id="description">Tento osobní počíta je vybaven grafickou kartou Nvidia QUADRO FX 3800, která zvládne procesovat hry až na 120 FPS. K monitoru ji lze připojit pomocí dvou Display portů i jednoho DVI portu. Procesorem tohoto počítače je intel core i5 4250. Celý systém má pak k dispozici 16GB RAM což je dostačující na hry i náročnější programy </p>
+    </div>
+
+    <script>
+        function changeImage(imgElement) {
+            const mainImage = document.getElementById('main-image');
+            mainImage.src = imgElement.src;
+        }
+    </script>
+</body>
+</html>
