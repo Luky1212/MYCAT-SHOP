@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCat</title>
+    <title>Mycat</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,7 +66,7 @@
 <body>
     <!-- Hlavní záhlaví s odkazem -->
     <header>
-        <a href="index.html">Mycat</a>
+        <a href="https://luky1212.github.io/MYCAT-SHOP/">Mycat</a>
     </header>
 
     <!-- Kontejner pro hlavní obrázek a miniatury -->
@@ -84,7 +84,7 @@
         </div>
 
         <!-- Popis -->
-        <p id="description">Tento osobní počíta je vybaven grafickou kartou Nvidia QUADRO FX 3800, která zvládne procesovat hry až na 120 FPS. K monitoru ji lze připojit pomocí dvou Display portů i jednoho DVI portu. Procesorem tohoto počítače je intel core i5 4250. Celý systém má pak k dispozici 16GB RAM což je dostačující na hry i náročnější programy </p>
+        <p id="description">Tento osobní počíta je vybaven grafickou kartou Nvidia QUADRO FX 3800, která zvládne procesovat hry až na 120 FPS. K monitoru ji lze připojit pomocí dvou Display portů i jednoho DVI portu. Procesorem tohoto počítače je intel core i5. Celý systém má pak k dispozici 16GB RAM což je dostačující na hry i náročnější programy. O ukládámí dat se zde starají 2 disky jeden SSD 500 GB na systém a jeden 1TB na média a hry.</p>
     </div>
 
     <script>
