@@ -27,11 +27,12 @@
             display: inline;
         }
 
-        /* Styl pro hlavní obsah stránky */
+        /* Hlavní obsah stránky - kontejnery pro produkty */
         .container {
             width: 80%;
             margin: 20px auto;
             display: flex;
+            flex-wrap: wrap;  /* Přizpůsobení pro různá zařízení */
             justify-content: space-between;
         }
 
@@ -41,11 +42,13 @@
             padding: 20px;
             border: 1px solid #ddd;
             text-align: center;
-            width: 45%;
+            width: 48%;  /* Nastavíme šířku na 48% pro dva vedle sebe */
+            margin-bottom: 20px;  /* Odstup mezi produkty */
+            box-sizing: border-box; /* Zajišťuje správné měření šířky včetně paddingu */
         }
 
         .product img {
-            width: 100%;
+            max-width: 100%; /* Obrázek se přizpůsobí šířce kontejneru */
             height: auto;
         }
 
@@ -70,6 +73,13 @@
             background-color: #0044cc;
             color: white;
         }
+
+        /* Responzivita - pro menší obrazovky nastavíme produkty pod sebe */
+        @media (max-width: 768px) {
+            .product {
+                width: 100%;  /* Produkty se na menší obrazovce zobrazí pod sebou */
+            }
+        }
     </style>
 </head>
 <body>
@@ -81,7 +91,7 @@
     <!-- Hlavní obsah - dva produkty s obrázky a popisem -->
     <div class="container">
         <!-- Produkt 1 -->
-        <div class="PC 1000">
+        <div class="product">
             <a href="https://github.com/Luky1212/MYCAT-PC1000/blob/main/index.html">
                 <img src="https://raw.githubusercontent.com/Luky1212/MYCAT-SHOP/refs/heads/main/komp%201000%20predobok.jpg" alt="PC 1000">
                 <h2>PC 1000 na práci i hry</h2>
@@ -90,7 +100,7 @@
         </div>
 
         <!-- Produkt 2 -->
-        <div class="PC 1500">
+        <div class="product">
             <a href="product2.html">
                 <img src="https://github.com/Luky1212/MYCAT-SHOP/blob/main/komp%201500%20predobok.jpg?raw=true" alt="PC 1500">
                 <h2>PC 1500 na zábavu hry i rodinu</h2>
